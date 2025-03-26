@@ -1,0 +1,44 @@
+﻿@{
+    ViewData["Title"] = "Gegevens invoeren";
+}
+
+<h2>Voer uw gegevens in</h2>
+
+<form id="personForm" method="post" action="/ASPER_02/SubmitPersonData">
+    <div class="form-group">
+        <label for="FirstName">Voornaam</label>
+        <input type="text" class="form-control" id="FirstName" name="FirstName" required />
+    </div>
+
+    <div class="form-group">
+        <label for="LastName">Achternaam</label>
+        <input type="text" class="form-control" id="LastName" name="LastName" required />
+    </div>
+
+    <div class="form-group">
+        <label for="Street">Straat</label>
+        <input type="text" class="form-control" id="Street" name="Street" required />
+    </div>
+
+    <div class="form-group">
+        <label for="HouseNumber">Huisnummer</label>
+        <input type="text" class="form-control" id="HouseNumber" name="HouseNumber" required />
+    </div>
+
+    <div class="form-group">
+        <label for="PostalCode">Postcode</label>
+        <input type="text" class="form-control" id="PostalCode" name="PostalCode" required />
+    </div>
+
+    <div class="form-group">
+        <label for="City">Woonplaats</label>
+        <input type="text" class="form-control" id="City" name="City" required />
+    </div>
+
+    <div class="form-group">
+        <label for="CreditCardNumber">Creditcardnummer</label>
+        <input type="number" class="form-control" id="CreditCardNumber" name="CreditCardNumber" required />
+    </div>
+
+    <button type="submit" class="btn btn-primary">Verstuur</button>
+</form>
